@@ -1,10 +1,10 @@
-#!/usr/bin/python3
+   #!/usr/bin/python3
 
 def common_elements(set_1, set_2):
-    comm_elemenet = []
+    el_result = []
+
     for letter in set_1:
         if letter in set_2:
-            result[len(letter):] = [letter]
-            
-    return result
+           el_result.append(letter)
+    return el_result
 

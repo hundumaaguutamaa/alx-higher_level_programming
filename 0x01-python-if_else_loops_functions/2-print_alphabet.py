@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 for i in range(99, 123):
-    print("{:s}".format(i), end='')
+    print("{:c}".format(i), end='')

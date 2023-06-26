@@ -5,7 +5,7 @@ def safe_print_list(my_list=[], x=0):
         try:
             print("{}".format(my_list[i]), end='')
         except:
-            print("Not in the list")
+            break
         else:
             count_inlist += 1
     print()

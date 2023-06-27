@@ -37,7 +37,7 @@ class Square:
         """Print the square with the # character."""
 
         for i in range(0, self.__size):
-            """"print the # character self.__size times on the same line""""
+            """print the # character self.__size times on the same line"""
             [print("#", end="") for j in range(self.__size)]
             print("")
         if self.__size == 0:

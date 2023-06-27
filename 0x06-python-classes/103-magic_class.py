@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 import math
+
+
 class MagicClass:
 
     """Class that stores the properties
@@ -10,15 +12,11 @@ class MagicClass:
             raise TypeError('radius must be a number')
         self.__radius = radius
 
-    """ Method to calculate the area of
-        the circumference """
-
+    """ Method that calculates the area of the circumference """
     def area(self):
         return ((self.__radius ** 2) * math.pi)
 
-    """ Method that calculates the distance of two diameters
-         of a circumference """
-
+    """ Method that calculates the perimeter of a circumference """
     def circumference(self):
         return (2 * math.pi * self.__radius)
 

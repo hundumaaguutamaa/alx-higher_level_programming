@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-
-new_string = ""
-index = 0
-while index < len(my_string):
-    if my_string[index] != 'c' and my_string[index] != 'C':
-        new_string += my_string[index]
-    index += 1
-	return new_string
-
+def no_c(my_string):
+    new_string = ""
+    for char in my_string:
+        if char != 'c' and char != 'C':
+            new_string += char
+    return new_string

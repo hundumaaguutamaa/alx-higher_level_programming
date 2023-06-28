@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Define python MagicClass to do as the same bytecode provided""" 
 
 import math

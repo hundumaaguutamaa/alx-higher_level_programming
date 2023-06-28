@@ -5,7 +5,7 @@
 
 class Square:
     """Representing a square."""
-    
+
     def __init__(self, size=0):
         """Initializes a new square.
 
@@ -29,10 +29,10 @@ class Square:
 
     def area(self):
         """Return area of the square, current area."""
-        return (self.__size * self.__size)
+        return self.__size * self.__size
 
     def __eq__(self, other):
-        """Define the equals to comparision to a Square."""
+        """Define the equals to comparison to a Square."""
         return self.area() == other.area()
 
     def __ne__(self, other):
@@ -40,17 +40,17 @@ class Square:
         return self.area() != other.area()
 
     def __lt__(self, other):
-        """Define lessthan comparison to a Square."""
+        """Define less than comparison to a Square."""
         return self.area() < other.area()
 
     def __le__(self, other):
-        """Define the lessthan or equal comparison to a Square."""
+        """Define the less than or equal comparison to a Square."""
         return self.area() <= other.area()
 
     def __gt__(self, other):
-        """Define the greaterthan comparison to a Square."""
+        """Define the greater than comparison to a Square."""
         return self.area() > other.area()
 
     def __ge__(self, other):
-        """Define the greaterthan or equal compmarison to a Square."""
+        """Define the greater than or equal comparison to a Square."""
         return self.area() >= other.area()

@@ -1,53 +1,66 @@
 #!/usr/bin/python3
-"""Square Class: defines a square."""
+
+"""Define class Square."""
+
 
 class Square:
+    """Representing a square."""
+
 
     def __init__(self, size=0):
-        """ Inistiantiate attributes"""
+        """Initializes a new square.
+
+        Args:
+            size (int): Size of the new square.
+        """
         self.size = size
+
 
     @property
     def size(self):
-        """ get size"""
-        return self.__size
+        """Get,set current size of square."""
+        return (self.__size)
+
 
     @size.setter
     def size(self, value):
-        """ sets the size assignment"""
-
-        if type(value) is not int:
-            raise TypeError('size must be an integer')
-
-        if (value < 0):
-            raise ValueError('size must be >= 0')
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
         self.__size = value
 
+
     def area(self):
-        """ Returns area of the square"""
+        """Return area of the square, current area."""
         return (self.__size * self.__size)
 
-    def __lt__(self, other):
-        """  Comparisition used lessthan """
-        return self.area() < other.area()
-
-    def __le__(self, other):
-        """ less than or equal comparision """
-        return self.area() <= other.area()
 
     def __eq__(self, other):
-        """ equals to comparison """
+        """Define the equals to comparision to a Square."""
         return self.area() == other.area()
 
     def __ne__(self, other):
-        """ not equal comparison """
+        """Define the not equal comparison to a Square."""
         return self.area() != other.area()
 
+
+    def __lt__(self, other):
+        """Define lessthan comparison to a Square."""
+        return self.area() < other.area()
+
+
+    def __le__(self, other):
+        """Define the lessthan or equal comparison to a Square."""
+        return self.area() <= other.area()
+
+
     def __gt__(self, other):
-        """ greater than comparision """
+        """Define the greaterthan comparison to a Square."""
         return self.area() > other.area()
 
-    def __ge__(self, other):
-        """ greater than or equal comparision """
 
+    def __ge__(self, other):
+        """Define the greaterthan or equal compmarison to a Square."""
+        """Return area"""
         return self.area() >= other.area()

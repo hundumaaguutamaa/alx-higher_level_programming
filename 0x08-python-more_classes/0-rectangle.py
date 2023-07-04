@@ -2,3 +2,4 @@
 """ Empty class """
 class Rectangle:
     pass
+

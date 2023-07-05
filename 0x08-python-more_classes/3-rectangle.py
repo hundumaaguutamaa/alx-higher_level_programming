@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Create a class Rectangle """
 
 
@@ -53,7 +52,8 @@ class Rectangle:
         """Sets the Rectangle object."""
         rectangle = ""
 
-        if self.__width > 0 and self.__height > 0:
-            rectangle = '\n'.join(['#' * self.__width for _ in range(self.__height)])
+      if self.__width > 0 and self.__height > 0:
+            for _symbol in range(self.__height):
+                rectangle += '#' * self.__width + '\n'
 
         return rectangle[:-1]

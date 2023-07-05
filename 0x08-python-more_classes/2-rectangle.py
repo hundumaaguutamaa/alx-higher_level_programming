@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Define a Rectangle class"""
 
 
 class Rectangle:
@@ -6,16 +7,16 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
        """Initializes a rectangle method with attributes"""
+
         self.width = width
         self.height = height
 
     @property
     def width(self):
-     """Returns a width method"""
+     """Set a width of the Rectangle"""
         return self.__width
 
     @width.setter
-
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -25,7 +26,7 @@ class Rectangle:
 
     @property
     def height(self):
-      """Returns a height method"""
+      """Set a height of the Rectangle"""
         return self.__height
 
     @height.setter
@@ -37,11 +38,11 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Returns a area method"""
+        """Returns area of the Rectangle"""
         return (self.__width * self.__height)
 
     def perimeter(self):
-        """Returns a perimeter method"""
+        """Returns a perimeter of the Rectangle"""
         if self.__width == 0 or self.__height == 0:
             return (0)
             """Returns perimeter of rectangle"""

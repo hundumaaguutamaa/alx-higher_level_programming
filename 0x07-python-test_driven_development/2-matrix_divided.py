@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+
 """ Matrix to divide matrix_divided """
+
+
 def matrix_divided(matrix, div):
 	""" Returns a new matrix
 	Args:

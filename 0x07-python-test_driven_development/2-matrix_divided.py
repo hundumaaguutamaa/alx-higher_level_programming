@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
-	"""
-		Matrix_divided matrix to divide elements by number
+	""" Matrix_divided matrix to divide elements by number"""
 
-	"""
+
 def matrix_divided(matrix, div):
 	""" Returns a new matrix
 	Args:
@@ -17,10 +16,8 @@ def matrix_divided(matrix, div):
     if not matrix or matrix == [[]] or matrix is None:
         raise TypeError(error)
 
-    
     if isinstance(div, (int, float, type(None))):
         pass
-
 
     else:
         raise TypeError("div must be a number")
@@ -47,5 +44,4 @@ def matrix_divided(matrix, div):
             else:
                 raise TypeError(error)
             
-    return matrix_list
-
+	return matrix_list

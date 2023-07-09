@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
-	""" matrix_divided matrix to divide elements by number.
+	"""
+		Matrix_divided matrix to divide elements by number
 
 	"""
 def matrix_divided(matrix, div):
-	"""Returns a new matrix
+	""" Returns a new matrix
 	Args:
 	matrix: list of atrix in integer or float.
 	
@@ -47,3 +48,4 @@ def matrix_divided(matrix, div):
                 raise TypeError(error)
             
     return matrix_list
+

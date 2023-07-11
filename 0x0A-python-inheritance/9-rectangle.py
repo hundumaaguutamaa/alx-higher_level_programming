@@ -2,7 +2,6 @@
 
 """used module 9-rectangle"""
 
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 

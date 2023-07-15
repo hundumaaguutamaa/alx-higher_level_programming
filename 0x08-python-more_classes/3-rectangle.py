@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""Create a class Rectangle """
+
+"""A class Rectangle that defines a rectangle"""
 
 
 class Rectangle:
-    """A Rectangle class"""
+    """Rectangle class"""
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
@@ -15,7 +16,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """set attribute"""
+        """Set width attribute"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -25,12 +26,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """Retrieve attribute"""
+        """Retrieve height attribute"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """set the attribute"""
+        """Set the height attribute"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
@@ -39,7 +40,7 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Get area of the rectangle"""
+        """Get area of the Rectangle"""
         return self.height * self.width
 
     def perimeter(self):
@@ -49,11 +50,10 @@ class Rectangle:
         return 2 * (self.height + self.width)
 
     def __str__(self):
-        """Sets the Rectangle object."""
+        """Setvprint behavior of the Rectangle object."""
         rectangle = ""
 
-      if self.__width > 0 and self.__height > 0:
-            for _symbol in range(self.__height):
+        if self.__width > 0 and self.__height > 0:
+            for y in range(self.__height):
                 rectangle += '#' * self.__width + '\n'
-
         return rectangle[:-1]

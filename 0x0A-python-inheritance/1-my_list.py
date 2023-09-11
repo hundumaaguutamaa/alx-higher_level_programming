@@ -5,8 +5,9 @@ class MyList(list):
     
     def __init__(self):
         
-        sorted_l = self.copy()
+        super().__init__()
       
-        sorted_l.sort()
+    def sorted_l(self):
         """Print sorted list"""
-        print(sorted_l)
+        print(sorted_li)
+        

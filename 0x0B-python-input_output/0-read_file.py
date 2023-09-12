@@ -3,7 +3,7 @@
 
 
 def read_file(filename=""):
-	"""Read fie and prints to stdout"""
-	with open(filename, encoding="utf-8") as h:
-		"""Opening the file with encoding utf-8"""
-		print(h.read(), end="")
+    """Read file and prints to stdout"""
+    with open(filename, encoding="utf-8") as h:
+        """ Opening the file with encoding utf-8"""
+        print(h.read(), end="")

@@ -1,4 +1,5 @@
- a file appending function"""
+#!/usr/bin/python3
+"""Defines a file appending function"""
 
 
 def append_write(filename="", text=""):

@@ -2,6 +2,7 @@
 """Script add all arguments to a Python list and save them to a file."""
 import sys
 
+if __name__ == "__main__":
 	"""Importing functions"""
     save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 	load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
@@ -12,4 +13,3 @@ import sys
         all_items = []
     all_items.extend(sys.argv[1:])
     save_to_json_file(all_items, "add_item.json")
-if __name__ == "__main__":

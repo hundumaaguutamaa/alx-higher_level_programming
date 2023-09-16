@@ -1,0 +1,42 @@
+
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(30, 13)
+43
+>>> add_integer(0)     
+98
+>>> add_integer(-30, -13)
+-43
+>>> add_integer(30.2, 13.0)
+43
+>>> add_integer(1)         
+99
+>>> add_integer(-1)
+97
+
+"""Errors"""
+
+>>> add_integer("Hundumaa", 30)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 9, in add_integer
+    raise TypeError("a must be an integer")
+TypeError: a must be an integer
+>>> add_integer("Hundumaa", -13)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 9, in add_integer
+    raise TypeError("a must be an integer")
+TypeError: a must be an integer
+>>> add_integer(None)           
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 9, in add_integer
+    raise TypeError("a must be an integer")
+TypeError: a must be an integer
+>>> add_integer("Hundumaa", -13)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/alx-higher_level_programming/0x07-python-test_driven_development/0-add_integer.py", line 9, in add_integer
+    raise TypeError("a must be an integer")
+TypeError: a must be an integer
+

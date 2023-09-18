@@ -1,5 +1,5 @@
 	Python - Almost a circle Project 
-* In this project, you will review everything about Python:
+In this project, you will review everything about Python:
 - Import
 - Exceptions
 - Class
@@ -10,7 +10,7 @@
 - Inheritance
 - Unittest
 - Read/Write file and, 
-* You will also learn about:
+You will also learn about:
 - args and kwargs
 - Serialization/Deserialization
 - JSON

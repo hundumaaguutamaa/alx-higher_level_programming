@@ -9,7 +9,8 @@ In this project, you will review everything about Python:
 - Static method
 - Inheritance
 - Unittest
-- Read/Write file and, 
+- Read/Write file and,
+
 You will also learn about:
 - args and kwargs
 - Serialization/Deserialization

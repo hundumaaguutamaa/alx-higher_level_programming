@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+"""Script list all states from database hbtn_0e_0_usa"""
+
+import MySQLdb
+from sys import argv
+
+if __name__ == '__main__':
+
+    """   Access to databases and get states from databases. """
+    dbname = MySQLdb.connect(host="localhost", user=argv[1], port=3306
+                         password=argv[2], dbname=argv[3])
+    cur = dbname.cursor()
+    cur.execute("SELECT * FROM states")
+    rows = cur.fetchall()
+
+    for row in rows:
+        print(row)

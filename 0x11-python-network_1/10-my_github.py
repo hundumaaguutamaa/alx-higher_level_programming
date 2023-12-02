@@ -18,11 +18,12 @@ if __name__ == "__main__":
     # Send a GET request to the GitHub API with Basic Authentication
     response = requests.get(url, auth=auth)
 
-    # Parse the JSON response
-    user_data = response.json()
+    # Check if the request was successful (status code 200)
+    if response.status_code == 200:
+        # Parse the JSON response
+        user_data = response.json()
 
-    # Display the user id
-    print(f"User ID: {user_data['id']}")
-
-    print(f"Error: {response.status_code}. Unable to fetch user data.")
-
+        # Display the user id
+        print(f"User ID: {user_data['id']}")
+    else:
+        print(f"Error: {response.status_code}. Unable to fetch user data.")

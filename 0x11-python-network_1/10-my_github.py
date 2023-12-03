@@ -9,7 +9,7 @@ from requests.auth import HTTPBasicAuth
 if __name__ == "__main__":
     # Replace 'YOUR_ACCESS_TOKEN' with your actual personal access token
     username = sys.argv[1]
-    access_token = sys.argv[2]
+    password = sys.argv[2]
 
     # URL for the authenticated user endpoint in GitHub API
     url = 'https://api.github.com/user'

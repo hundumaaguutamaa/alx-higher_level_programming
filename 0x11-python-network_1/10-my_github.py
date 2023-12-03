@@ -3,6 +3,8 @@
 
 import requests
 import sys
+from requests.auth import HTTPBasicAuth
+
 
 if __name__ == "__main__":
     # Replace 'YOUR_ACCESS_TOKEN' with your actual personal access token
@@ -10,20 +12,13 @@ if __name__ == "__main__":
     access_token = sys.argv[2]
 
     # URL for the authenticated user endpoint in GitHub API
-    url = "https://api.github.com/user"
+    url = 'https://api.github.com/user'
 
     # Set up the authentication using Basic Authentication with the access token
-    auth = (username, access_token)
+    auth = HTTPBasicAuth(username, access_token)
 
     # Send a GET request to the GitHub API with Basic Authentication
     response = requests.get(url, auth=auth)
 
-    # Check if the request was successful (status code 200)
-    if response.status_code == 200:
-        # Parse the JSON response
-        user_data = response.json()
-
         # Display the user id
-        print(f"User ID: {user_data['id']}")
-    else:
-        print(f"Error: {response.status_code}. Unable to fetch user data.")
+    print(response.json().get("id"))

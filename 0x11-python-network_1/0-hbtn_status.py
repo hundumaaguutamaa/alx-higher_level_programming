@@ -4,14 +4,11 @@
  from urllib.request import urlopen
 
 if __name__ == "__main__":
-    url = "https://alx-intranet.hbtn.io/status"
+    from urllib.request import urlopen
 
-    """ fetch the url """
-     with urlopen("https://alx-intranet.hbtn.io/status") as response:
-        response_body = response.read()
-
-        """ Display response body with tabulation """
-        print(f"Body response:")
-        print(f"\t- type: {type(response_body)}")
-        print(f"\t- content: {response_body.decode('utf-8')}")
-        print(f"\t- utf8 content: {response_body.decode('utf-8')}")
+    with urlopen("https://alx-intranet.hbtn.io/status") as response:
+        html = response.read()
+        print('Body response:')
+        print('\t- type: {}'.format(type(html)))
+        print('\t- content: {}'.format(html))
+        print('\t- utf8 content: {}'.format(html.decode("utf-8", "strict")))

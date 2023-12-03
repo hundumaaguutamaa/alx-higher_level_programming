@@ -15,7 +15,7 @@ if __name__ == "__main__":
     url = 'https://api.github.com/user'
 
     # Set up the authentication using Basic Authentication with the access token
-    auth = HTTPBasicAuth(username, access_token)
+    auth = HTTPBasicAuth(username, password)
 
     # Send a GET request to the GitHub API with Basic Authentication
     response = requests.get(url, auth=auth)
